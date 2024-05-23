@@ -24,7 +24,7 @@ const Community: React.FC = () => {
           <div className="relative w-[565.25px] h-[275.91px] flex flex-col items-center md:items-start md:justify-start">
             <motion.img
               whileHover={{
-                scale: 1.4,
+                scale: 1.15,
                 zIndex: 1,
                 rotate: -10,
                 transition: {
@@ -41,7 +41,7 @@ const Community: React.FC = () => {
             />
             <motion.img
               whileHover={{
-                scale: 1.4,
+                scale: 1.15,
                 zIndex: 1,
                 rotate: 6,
                 transition: {
@@ -58,7 +58,7 @@ const Community: React.FC = () => {
             />
             <motion.img
               whileHover={{
-                scale: 1.4,
+                scale: 1.15,
                 zIndex: 1,
                 rotate: -6,
                 transition: {

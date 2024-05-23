@@ -13,7 +13,7 @@ const Investor: React.FC = () => {
           <div className="relative w-[565.25px] h-[275.91px] flex flex-col items-center md:items-start md:justify-start">
             <motion.img
               whileHover={{
-                scale: 1.7,
+                scale: 1.35,
                 zIndex: 1,
                 rotate: -13,
                 transition: {
@@ -30,7 +30,7 @@ const Investor: React.FC = () => {
             />
             <motion.img
               whileHover={{
-                scale: 1.7,
+                scale: 1.35,
                 zIndex: 1,
                 rotate: -8,
                 transition: {
@@ -47,7 +47,7 @@ const Investor: React.FC = () => {
             />
             <motion.img
               whileHover={{
-                scale: 1.7,
+                scale: 1.35,
                 zIndex: 1,
                 rotate: 17,
                 transition: {
