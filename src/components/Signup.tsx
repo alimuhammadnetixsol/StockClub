@@ -6,7 +6,7 @@ const Signup: React.FC = () => {
     // <div className="relative bg-[#00ABE1] w-full min-h-[680px] flex items-center justify-center">
     //   <Image
     //     src={icon}
-    //     alt="Description of the image"
+    //     alt="Description of the image"x
     //     className="object-cover h-[680px]"
     //   />
 
