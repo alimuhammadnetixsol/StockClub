@@ -6,21 +6,35 @@ import Signup from "@/components/Signup";
 import Community from "@/components/Community";
 import Accounts from "@/components/Accounts";
 import Investor from "@/components/Investor";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Home: React.FC = () => {
+  const isMobile = useMediaQuery("(max-width: 1020px)");
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
       once: false,
     });
   }, []);
+
   return (
-    <div>
-      <Signup />
-      <Community />
-      <Accounts />
-      <Investor />
-    </div>
+    <>
+      {isMobile ? (
+        <>
+          <Community />
+          <Accounts />
+          <Investor />
+        </>
+      ) : (
+        <>
+          <Signup />
+          <Community />
+          <Accounts />
+          <Investor />
+        </>
+      )}
+    </>
   );
 };
 
