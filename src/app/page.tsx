@@ -10,7 +10,7 @@ import Investor from "@/components/Investor";
 const Home: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1300,
       once: false,
     });
   }, []);

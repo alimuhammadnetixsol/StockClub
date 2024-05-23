@@ -11,17 +11,33 @@ const Accounts: React.FC = () => {
       >
         <div className="lg:w-[50%] w-full flex items-center justify-center min-h-[300px] lg:min-h-[480px]">
           <div className="relative w-[565.25px] h-[275.91px] flex flex-col items-center md:items-start md:justify-start">
-            <motion.div whileHover={{ scale: 1.2 }}>
-              <Image
-                data-aos="fade-up"
-                src="/images/Brokers.png"
-                alt="Brokers"
-                width={565.25}
-                height={275.91}
-                className="absolute left-14 -top-10 md:-left-4 md:-top-20"
-              />
-            </motion.div>
-            <Image
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: 5,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
+              data-aos="fade-up"
+              src="/images/Brokers.png"
+              alt="Brokers"
+              width={565.25}
+              height={275.91}
+              className="absolute left-14 -top-10 md:-left-4 md:-top-20"
+            />
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: -3,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
               data-aos="fade-up"
               src="/images/Accounts.png"
               alt="Accounts"
@@ -29,7 +45,16 @@ const Accounts: React.FC = () => {
               height={275.91}
               className="absolute left-2 top-2 md:left-4 md:top-6"
             />
-            <Image
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: 6,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
               data-aos="fade-up"
               src="/images/Account1.png"
               alt="Account1"

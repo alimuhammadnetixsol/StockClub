@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Community: React.FC = () => {
   return (
@@ -21,7 +22,16 @@ const Community: React.FC = () => {
 
         <div className="lg:w-[50%] w-full flex items-center justify-center min-h-[300px] lg:min-h-[480px]">
           <div className="relative w-[565.25px] h-[275.91px] flex flex-col items-center md:items-start md:justify-start">
-            <Image
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: -10,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
               data-aos="fade-up"
               src="/images/Amazon.png"
               alt="Amazon"
@@ -29,7 +39,16 @@ const Community: React.FC = () => {
               height={275.91}
               className="absolute left-14 -top-10 md:left-12 md:-top-20"
             />
-            <Image
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: 6,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
               data-aos="fade-up"
               src="/images/Google.png"
               alt="Google"
@@ -37,7 +56,16 @@ const Community: React.FC = () => {
               height={275.91}
               className="absolute left-2 top-2 md:left-0 md:-top-8"
             />
-            <Image
+            <motion.img
+              whileHover={{
+                scale: 1.4,
+                zIndex: 1,
+                rotate: -6,
+                transition: {
+                  duration: 0.001, // Very short duration
+                  ease: "linear", // Linear easing for an immediate effect
+                },
+              }}
               data-aos="fade-up"
               src="/images/StockClub.png"
               alt="StockClub"
